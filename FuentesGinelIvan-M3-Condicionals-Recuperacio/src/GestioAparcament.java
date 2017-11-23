@@ -26,7 +26,7 @@ public class GestioAparcament {
 				t = false;
 			}
 		}
-		//dades de l'usuari 
+		//dades de l'usuari  
 		s.close();
 		System.out.println("");
 		System.out.printf("Vehicle 1 : (%d minuts d'estada, %.2f  m de longitud i client amb %d anys d'antiguitat)\n", tempsEstacionament, longitudVehicle, antiguitatClients);
