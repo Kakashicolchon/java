@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class MajorEdat {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		int edat;
 		Scanner s = new Scanner(System.in);
 		

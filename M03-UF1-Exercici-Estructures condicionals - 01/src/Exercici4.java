@@ -1,4 +1,3 @@
-import java.awt.print.Printable;
 import java.util.Scanner;
 
 public class Exercici4 {
@@ -22,6 +21,7 @@ public class Exercici4 {
 		else {
 			System.out.println("Els números intruduïts no estan ordenats");
 		}
+		s.close();
 
 	}
 	

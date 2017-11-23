@@ -32,8 +32,8 @@ public class Condicionals {
 		else {
 			System.out.println("");
 		}
+		s.close();
 		}
-			
 
 	}
 
