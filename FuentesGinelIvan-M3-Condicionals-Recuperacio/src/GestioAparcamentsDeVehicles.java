@@ -5,7 +5,6 @@ public class GestioAparcamentsDeVehicles {
 		int a=0;
 		a = 1;
 		
-
 	}
 
 }
