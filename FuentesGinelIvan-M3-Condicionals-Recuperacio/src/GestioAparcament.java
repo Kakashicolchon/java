@@ -21,7 +21,7 @@ public class GestioAparcament {
 			t = false;
 			if (tempsEstacionament <= 0 || longitudVehicle <= 0 || antiguitatClients <= 0) {
 				System.out.println("No heu introduït els valors correctes.");
-			}
+			} 
 			else {
 				t = false;
 			}
