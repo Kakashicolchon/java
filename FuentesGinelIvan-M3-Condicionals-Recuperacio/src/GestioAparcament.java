@@ -9,8 +9,10 @@ public class GestioAparcament {
 		double longitudVehicle = 0;
 		double antiguitatClients = 0;
 		boolean t = true;
+		double preuPerTemps, preuPerLong = 0;
+		double descompte;
 		Scanner s = new Scanner (System.in);
-
+		//Preguntem les dades directament (canviar en el cas de la part opcional)
 		while (t == true) {
 			System.out.print("Quant de temps estaràs estacionat (Minuts): ");
 			tempsEstacionament = s.nextInt();
@@ -39,19 +41,23 @@ public class GestioAparcament {
 		//Calculem el preu del temps d'estacionament
 		if (tempsEstacionament <= 120 ) {
 			//Temps en el cas de 1 a 120 min
-			tempsEstacionament = 0.04 * tempsEstacionament;
+			preuPerTemps = 0.04 * tempsEstacionament;
 		}
 		else if (tempsEstacionament <= 121 && tempsEstacionament >= 600) {
 			//Temps en el cas de 121 a 600
-			tempsEstacionament = (0.04 * tempsEstacionament) + (0.027 * (tempsEstacionament-120)); 
+			preuPerTemps = (0.04 * tempsEstacionament) + (0.027 * (tempsEstacionament-120)); 
 		}
 		else {
 			//Temps en el cas de + de 600 (fins a 24 hores)
-			tempsEstacionament = 17.76; 
+			preuPerTemps = 17.76; 
 		}
 		
 		//Calculem el preu de la longitud del vehicle
 		if ( longitudVehicle > 4.5) {
+			preuPerLong = (preuPerTemps * 10) / 100; 
+		}
+		if (antiguitatClients >= 5) {
+			descompte = ((preuPerLong + preuPerTemps) * 10) / 100;
 			
 		}
 		 
