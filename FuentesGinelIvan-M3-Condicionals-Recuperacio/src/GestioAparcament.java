@@ -69,7 +69,7 @@ public class GestioAparcament {
 		
 		//mostrem els resultats a l'usuari
 		System.out.println("");
-		System.out.printf("Vehicle 1 : (%.2f minuts d'estada, %.2f  m de longitud i client amb %.2f anys d'antiguitat)\n", tempsEstacionament, longitudVehicle, antiguitatClients);
+		System.out.printf("Vehicle 1 : (%.2f minuts d'estada, %.2f m de longitud i client amb %.2f anys d'antiguitat)\n", tempsEstacionament, longitudVehicle, antiguitatClients);
 		System.out.println("______________________________________________________________________________________");
 		//Preu per temps
 		if (tempsEstacionament >= 120) {
@@ -81,7 +81,7 @@ public class GestioAparcament {
 		//Preu per longitud
 		if (preuPerLong == 0) {
 			System.out.println("  >>  Recàrrec per longitud del vehicle(no)            = 0,00 €");
-			System.out.printf("  >>  Preu amb recàrrec per longitud                   = %.2f €", preuPerTemps);
+			System.out.printf("  >>  Preu amb recàrrec per longitud                   = %.2f € \n", preuPerTemps);
 		}
 		else {
 			System.out.printf("  >>  Recàrrec per longitud del vehicle(si)            = %.2f € \n",preuPerLong );
