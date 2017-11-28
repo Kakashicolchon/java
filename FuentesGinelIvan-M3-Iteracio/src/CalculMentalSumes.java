@@ -20,6 +20,7 @@ public class CalculMentalSumes {
 			}
 		} while (valorMin > valorMax || valorMin  <= 0);
 		s.close();
+		
 	}
 
 }
