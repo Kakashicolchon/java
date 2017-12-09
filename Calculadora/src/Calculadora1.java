@@ -21,14 +21,13 @@ public class Calculadora1 {
 	 */
 	public static void main(String[] args) {
 		Display display = Display.getDefault();
-		Shell shell = new Shell();
-		shell.setSize(591, 417);
-		shell.setText("SWT Application");
+		Shell shlCalculadoraNoResponsive = new Shell();
+		shlCalculadoraNoResponsive.setBackground(SWTResourceManager.getColor(SWT.COLOR_GRAY));
+		shlCalculadoraNoResponsive.setImage(SWTResourceManager.getImage("C:\\Users\\jitsu\\Desktop\\meter_calculator_11440.png"));
+		shlCalculadoraNoResponsive.setSize(594, 417);
+		shlCalculadoraNoResponsive.setText("Calculadora");
 		
-		Composite matrix = new Composite(shell, SWT.NONE);
-		matrix.setBounds(0, 0, 565, 369);
-		
-		Button button_0 = new Button(shell, SWT.NONE);
+		Button button_0 = new Button(shlCalculadoraNoResponsive, SWT.NONE);
 		button_0.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
@@ -38,7 +37,7 @@ public class Calculadora1 {
 		button_0.setText("0");
 		button_0.setBounds(10, 292, 119, 74);
 		
-		Button button1 = new Button(shell, SWT.NONE);
+		Button button1 = new Button(shlCalculadoraNoResponsive, SWT.NONE);
 		button1.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
@@ -48,7 +47,7 @@ public class Calculadora1 {
 		button1.setText("1");
 		button1.setBounds(10, 218, 119, 74);
 		
-		Button button4 = new Button(shell, SWT.NONE);
+		Button button4 = new Button(shlCalculadoraNoResponsive, SWT.NONE);
 		button4.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
@@ -58,7 +57,7 @@ public class Calculadora1 {
 		button4.setText("4");
 		button4.setBounds(10, 144, 119, 74);
 		
-		Button button7 = new Button(shell, SWT.NONE);
+		Button button7 = new Button(shlCalculadoraNoResponsive, SWT.NONE);
 		button7.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
@@ -68,7 +67,7 @@ public class Calculadora1 {
 		button7.setText("7");
 		button7.setBounds(10, 68, 119, 74);
 		
-		Button button2 = new Button(shell, SWT.NONE);
+		Button button2 = new Button(shlCalculadoraNoResponsive, SWT.NONE);
 		button2.setFont(SWTResourceManager.getFont("Segoe UI", 9, SWT.NORMAL));
 		button2.addSelectionListener(new SelectionAdapter() {
 			@Override
@@ -79,7 +78,7 @@ public class Calculadora1 {
 		button2.setText("2");
 		button2.setBounds(131, 218, 119, 74);
 		
-		Button button5 = new Button(shell, SWT.NONE);
+		Button button5 = new Button(shlCalculadoraNoResponsive, SWT.NONE);
 		button5.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
@@ -89,7 +88,7 @@ public class Calculadora1 {
 		button5.setText("5");
 		button5.setBounds(131, 144, 119, 74);
 		
-		Button button6 = new Button(shell, SWT.NONE);
+		Button button6 = new Button(shlCalculadoraNoResponsive, SWT.NONE);
 		button6.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
@@ -99,7 +98,7 @@ public class Calculadora1 {
 		button6.setText("6");
 		button6.setBounds(252, 144, 119, 74);
 		
-		Button button3 = new Button(shell, SWT.NONE);
+		Button button3 = new Button(shlCalculadoraNoResponsive, SWT.NONE);
 		button3.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
@@ -109,7 +108,7 @@ public class Calculadora1 {
 		button3.setText("3");
 		button3.setBounds(252, 218, 119, 74);
 		
-		Button button8 = new Button(shell, SWT.NONE);
+		Button button8 = new Button(shlCalculadoraNoResponsive, SWT.NONE);
 		button8.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
@@ -119,7 +118,7 @@ public class Calculadora1 {
 		button8.setText("8"); 
 		button8.setBounds(131, 68, 119, 74);
 		
-		Button button9 = new Button(shell, SWT.NONE);
+		Button button9 = new Button(shlCalculadoraNoResponsive, SWT.NONE);
 		button9.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
@@ -129,7 +128,7 @@ public class Calculadora1 {
 		button9.setText("9");
 		button9.setBounds(252, 68, 119, 74);
 		
-		Button sumar = new Button(shell, SWT.NONE);
+		Button sumar = new Button(shlCalculadoraNoResponsive, SWT.NONE);
 		sumar.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
@@ -141,7 +140,7 @@ public class Calculadora1 {
 		sumar.setText("+");
 		sumar.setBounds(374, 292, 119, 74);
 		
-		Button igual = new Button(shell, SWT.NONE);
+		Button igual = new Button(shlCalculadoraNoResponsive, SWT.NONE);
 		igual.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
@@ -171,7 +170,7 @@ public class Calculadora1 {
 		igual.setText("=");
 		igual.setBounds(252, 292, 119, 74);
 		
-		Button restar = new Button(shell, SWT.NONE);
+		Button restar = new Button(shlCalculadoraNoResponsive, SWT.NONE);
 		restar.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
@@ -183,7 +182,7 @@ public class Calculadora1 {
 		restar.setText("-");
 		restar.setBounds(374, 218, 119, 74);
 		
-		Button dividir = new Button(shell, SWT.NONE);
+		Button dividir = new Button(shlCalculadoraNoResponsive, SWT.NONE);
 		dividir.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
@@ -195,7 +194,7 @@ public class Calculadora1 {
 		dividir.setText("/");
 		dividir.setBounds(374, 144, 119, 74);
 		
-		Button multiplicar = new Button(shell, SWT.NONE);
+		Button multiplicar = new Button(shlCalculadoraNoResponsive, SWT.NONE);
 		multiplicar.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
@@ -207,11 +206,11 @@ public class Calculadora1 {
 		multiplicar.setText("*");
 		multiplicar.setBounds(374, 68, 119, 74);
 		
-		pantalla = new Text(shell, SWT.BORDER | SWT.RIGHT);
+		pantalla = new Text(shlCalculadoraNoResponsive, SWT.BORDER | SWT.RIGHT);
 		pantalla.setFont(SWTResourceManager.getFont("Segoe UI", 27, SWT.NORMAL));
 		pantalla.setBounds(10, 10, 555, 52);
 		
-		Button butonC = new Button(shell, SWT.NONE);
+		Button butonC = new Button(shlCalculadoraNoResponsive, SWT.NONE);
 		butonC.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
@@ -221,7 +220,7 @@ public class Calculadora1 {
 		butonC.setBounds(499, 68, 68, 150);
 		butonC.setText("C");
 		
-		Button coma = new Button(shell, SWT.NONE);
+		Button coma = new Button(shlCalculadoraNoResponsive, SWT.NONE);
 		coma.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
@@ -231,7 +230,7 @@ public class Calculadora1 {
 		coma.setBounds(131, 292, 119, 74);
 		coma.setText(",");
 		
-		Button btnAc = new Button(shell, SWT.NONE);
+		Button btnAc = new Button(shlCalculadoraNoResponsive, SWT.NONE);
 		btnAc.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
@@ -243,9 +242,9 @@ public class Calculadora1 {
 		btnAc.setText("AC");
 		btnAc.setBounds(499, 218, 68, 151);
 
-		shell.open();
-		shell.layout();
-		while (!shell.isDisposed()) {
+		shlCalculadoraNoResponsive.open();
+		shlCalculadoraNoResponsive.layout();
+		while (!shlCalculadoraNoResponsive.isDisposed()) {
 			if (!display.readAndDispatch()) {
 				display.sleep();
 			}
