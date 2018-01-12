@@ -9,13 +9,33 @@ public class Exercici1 {
 		Scanner s = new Scanner(System.in);
 		String inicials = "";
 		
-		//Preguntem nom i cognoms a l'usuari.
+		//Condicionals per comprovar si l'string és buit o no.
+		
 		System.out.print("Nom: ");
 		nom = s.nextLine().trim();
 		System.out.print("Primer cognom: ");
 		cognom1 = s.nextLine().trim();
 		System.out.print("Segon cognom: ");
 		cognom2 = s.nextLine().trim();
+		
+		if (nom.isEmpty() || cognom1.isEmpty()) {
+			System.out.println("El nom i el primer cognom no es poden deixar en blanc.");
+		}
+		else {
+			//Preguntem nom i cognoms a l'usuari.
+			System.out.print("Nom: ");
+			nom = s.nextLine().trim();
+			System.out.print("Primer cognom: ");
+			cognom1 = s.nextLine().trim();
+			System.out.print("Segon cognom: ");
+			cognom2 = s.nextLine().trim();
+			if (!cognom2.isEmpty()) {
+				
+			}
+			
+		}
+		
+		
 		
 		//Agafem la primera lletra del nom i la concatenem amb la inicial.
 		
