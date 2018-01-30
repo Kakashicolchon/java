@@ -28,7 +28,7 @@ public class GestioCSV_3Opcional {
 				
 				t = false;
 			}
-			//elementPes
+			//elementAlcada
 			else if (coma == 3) {
 				//i posicio primera coma, pf, segona coma
 				pf = cadenaDeCaracters.indexOf(',', i+1);
