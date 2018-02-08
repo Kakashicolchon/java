@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class Teoria01 {
 
@@ -80,6 +81,31 @@ public class Teoria01 {
 		int[] t2 = {};
 		//desde la posicion 0 de t1, hasta la t2 (desde la posicion 0 de t2) copia desde 0 hasta lenght de toda la tabla t1.
 		System.arraycopy(t1, 0, t2, 0, t1.length);
+		
+		//Comparació de taules. == 
+		
+		if (Arrays.equals(notes2, notes3)) { //utiliza una biblioteca como el scanner
+			System.out.println("Les dues taules son iguals.");
+		}
+		else {
+			System.out.println("Les taules no son iguals( és el cas)");
+		}
+		
+		//Para visualizar una tabla unidimensional por consola.
+		
+		double [] valors = {1.5,7.2};
+		System.out.println("Taula de valors: " + Arrays.toString(valors));
+		
+		//binarySearch() cerca d'un element dins d'una taula ordenada utilitzant l'algorisme de cerca binaria, ens retornarà la posició on podem trobar l'element buscat.
+		//La tabla tiene que estar ordenada de pequeño a grande
+		
+		
+		//CopyOF copyrange (nuse)
+		
+		//Arrays.fill(t3,10) en la tabla t3, agragará el numero10 a cada posición.
+
+		//Arrays.sort(t2) (ordena t2 de pequeño a grande)
+		
 		
 		
 	}
