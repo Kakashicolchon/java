@@ -14,29 +14,29 @@ public class Exerci3 {
 		System.out.print("Escriu una frase: ");
 		frase = s.nextLine().toLowerCase();
 		
-		//Fem un bucle, per llegir la frase caràctera caràcter.
+		//Fem un bucle, per llegir la frase carï¿½ctera carï¿½cter.
 		
 		for (int i = 0; i < frase.length(); i++) {
 			switch (frase.charAt(i)) {
 			case 'a':
-			case 'à':
-			case 'á': as++;
+			case 'Ã ':
+			case 'Ã¡': as++;
 				break;
 			case 'e':
-			case 'é':
-			case 'è': es++;
+			case 'Ã©':
+			case 'Ã¨': es++;
 				break;
 			case 'i':
-			case 'í':
-			case 'ï': is++;
+			case 'Ã­':
+			case 'Ã¯': is++;
 				break;
 			case 'o':
-			case 'ó':
-			case 'ò': os++;
+			case 'Ã³':
+			case 'Ã²': os++;
 				break;
 			case 'u':
-			case 'ú':
-			case 'ü': us++;
+			case 'Ãº':
+			case 'Ã¼': us++;
 			
 				
 
