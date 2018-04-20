@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class Exercici1 {
 
-	public static void main(String[] args) {
-		
-
+	public static void main(String[] args) throws FileNotFoundException {
+		Scanner s = new Scanner(new File("C:\\Users\\tonim\\git\\java\\PrietoFuentesAntonioIvan-M3-EstacionsMeteorologiques\\src\\dades.txt"));
+		int numEstacions = llegeixNombreEstacions(s);
 	}
 	/**
 	 * Mètode que ens diu el nombre d'estacions sobre les quals tenim dades en l'arxiu
@@ -21,10 +21,10 @@ public class Exercici1 {
 	 * @throws FileNotFoundException 
 	 */
 	 public static int llegeixNombreEstacions(Scanner sc) throws FileNotFoundException {
-			Scanner s = new Scanner(new File("dades.txt"));
 			String linia;
-			linia = s.nextLine();
+			linia = sc.nextLine();
 			System.out.println(linia);
+			return 0;
 	 }
 	
 	
