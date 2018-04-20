@@ -30,7 +30,7 @@ public class Exercici1 {
 	
 	
 	
-	// Por acabar función 1
+	
 	
 
 }
