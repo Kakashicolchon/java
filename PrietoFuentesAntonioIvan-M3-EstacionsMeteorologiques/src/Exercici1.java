@@ -7,6 +7,7 @@ public class Exercici1 {
 	public static void main(String[] args) throws FileNotFoundException {
 		Scanner s = new Scanner(new File("./dades.txt"));
 		int numEstacions = llegeixNombreEstacions(s);
+		
 	}
 	/**
 	 * Mètode que ens diu el nombre d'estacions sobre les quals tenim dades en l'arxiu
@@ -21,9 +22,9 @@ public class Exercici1 {
 	 * @throws FileNotFoundException 
 	 */
 	 public static int llegeixNombreEstacions(Scanner sc) throws FileNotFoundException {
-			String linia;
-			linia = sc.nextLine();
-			System.out.println(linia);
+			String cadenaCSV;
+			cadenaCSV = sc.nextLine();
+			System.out.println(cadenaCSV);
 			return 0;
 	 }
 	
@@ -45,18 +46,19 @@ public class Exercici1 {
 	 * s'acaben prematurament, retornarà un nombre de línies llegides menor que la
 	 * mida de les taules.
 	 */
-	 public static int llegeixDadesArxiu(Scanner sc, String[] n, double[] t, double[] h) {
-		 String linia;
-		 int contadorComes = 0;
+	 public static int llegeixDadesArxiu(Scanner sc, String [] n, double[] t, double[] h) {
+		 String cadenaCSV = "";
+		 String nomEstacio;
+		 int comptador = 0;
+		 
 		 while (sc.hasNext() == true) {
-				linia = sc.nextLine();
-				for (int i = 0; i < linia.length(); i++) {
-					if (linia.charAt(i) == ',') {
-						contadorComes++;
-					}
-				}
-					
+				cadenaCSV = sc.nextLine();
+				n [comptador] = extreuElementCSV(cadenaCSV, 1);
+				t [comptador] = Double.parseDouble(extreuElementCSV(cadenaCSV, 7));
+				h [comptador] = Double.parseDouble(extreuElementCSV(cadenaCSV, 8));
+				 comptador++;
 			}
+		 return comptador + 1;
 	 }
 	
 	
@@ -83,6 +85,8 @@ public class Exercici1 {
 		 //coma = elementAExtreure -1
 		 //indexOF(",");
 		 //charAt();
+		 //Hacer con split
+		 cadenaCSV.split
 		 for (int i = 0; i < cadenaCSV.length(); i++) {
 			if (cadenaCSV.charAt(i) == ',') {
 				comptadorComes++;
