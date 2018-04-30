@@ -85,8 +85,12 @@ public class Exercici1 {
 		 //coma = elementAExtreure -1
 		 //indexOF(",");
 		 //charAt();
+		 
+		 
 		 //Hacer con split
 		 cadenaCSV.split
+		 
+		 /*
 		 for (int i = 0; i < cadenaCSV.length(); i++) {
 			if (cadenaCSV.charAt(i) == ',') {
 				comptadorComes++;
@@ -98,6 +102,7 @@ public class Exercici1 {
 				}
 			}
 		}
+		*/
 		 return elementCSV;
 	 }
 
