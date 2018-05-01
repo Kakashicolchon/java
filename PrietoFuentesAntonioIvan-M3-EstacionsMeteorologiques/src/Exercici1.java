@@ -121,6 +121,9 @@ public class Exercici1 {
 	   public static double[] calculaNIndexsXafogor(double[] ts, double[] hs) {
 		   double[] indexsXafogorCalculats = new double[ts.length];
 		   
+		   for (int i = 0; i < indexsXafogorCalculats.length; i++) {
+			   //indexXafogorCalculats[i] = calculaIndexXafogor
+		}
 		   
 		   
 		   
