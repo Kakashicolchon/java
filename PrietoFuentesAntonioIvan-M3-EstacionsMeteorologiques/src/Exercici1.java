@@ -9,6 +9,7 @@ public class Exercici1 {
 		int numEstacions = llegeixNombreEstacions(s);
 		
 	}
+	
 	/**
 	 * Mètode que ens diu el nombre d'estacions sobre les quals tenim dades en l'arxiu
 	 * CSV d'entrada.
@@ -83,6 +84,26 @@ public class Exercici1 {
 		 
 		 return elements[elementAExtreure];
 	 }
+	 
+	 
+	 /**
+	  * Mètode que calcula un índex de xafogor a partir d'una temperatura expressada en
+	  * graus centígrads i d'una humitat relativa expressada en percentatge.
+	  * @param t Valor de la temperatura.
+	  * @param h Valor de la humitat relativa.
+	  * @return Índex de xafogor calculat.
+	  */
+	  public static double calculaIndexXafogor(double t, double h) {
+		  Double indexXafogor;
+		  Double pow1;
+		  
+		  pow1 = Math.pow(10, ((7.5*t)/(237.7 + t)));
+		  indexXafogor = t+(5/9)*((6.122*(h/100)*pow1)-10);
+		  
+		  
+		  return indexXafogor;
+	  }
+
 
 
 }
