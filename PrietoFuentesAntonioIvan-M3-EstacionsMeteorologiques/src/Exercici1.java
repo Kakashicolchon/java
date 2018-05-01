@@ -119,7 +119,13 @@ public class Exercici1 {
 	   * els índexs de xafogor calculats.
 	   */
 	   public static double[] calculaNIndexsXafogor(double[] ts, double[] hs) {
+		   double[] indexsXafogorCalculats = new double[ts.length];
 		   
+		   
+		   
+		   
+		   
+		   return indexsXafogorCalculats;
 	   }
 
 
