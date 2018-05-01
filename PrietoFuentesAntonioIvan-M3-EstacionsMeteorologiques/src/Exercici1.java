@@ -1,12 +1,24 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Exercici1 {
 
 	public static void main(String[] args) throws FileNotFoundException {
-		Scanner s = new Scanner(new File("./dades.txt"));
-		int numEstacions = llegeixNombreEstacions(s);
+		Scanner sc = new Scanner(new File("./dades.txt"));
+		int numEstacions;
+		numEstacions = llegeixNombreEstacions(sc);
+		double [] t = new double[numEstacions];
+		double [] h = new double [numEstacions];
+		double [] indexXafogorResultat = new double[numEstacions];
+		String [] n = new String[numEstacions];
+		//ejecisión
+		llegeixDadesArxiu(sc, n, t, h);
+		
+		indexXafogorResultat = calculaNIndexsXafogor(t, h);
+		System.out.println(Arrays.toString(indexXafogorResultat));
+		
 		
 	}
 	
@@ -25,8 +37,8 @@ public class Exercici1 {
 	 public static int llegeixNombreEstacions(Scanner sc) throws FileNotFoundException {
 			String cadenaCSV;
 			cadenaCSV = sc.nextLine();
-			System.out.println(cadenaCSV);
-			return 0;
+			int nombreEstacions = Integer.parseInt(cadenaCSV);
+			return nombreEstacions;
 	 }
 	
 	 /**
@@ -122,11 +134,8 @@ public class Exercici1 {
 		   double[] indexsXafogorCalculats = new double[ts.length];
 		   
 		   for (int i = 0; i < indexsXafogorCalculats.length; i++) {
-			   //indexXafogorCalculats[i] = calculaIndexXafogor
+			  indexsXafogorCalculats[i] = calculaIndexXafogor (ts[i],hs[i]);
 		}
-		   
-		   
-		   
 		   
 		   return indexsXafogorCalculats;
 	   }
