@@ -77,18 +77,11 @@ public class Exercici1 {
 	  demanat no existeix, ens retorna null.
 	 */
 	 public static String extreuElementCSV(String cadenaCSV, int elementAExtreure) {
-		
-		 String elementCSV;
-		 int posicioInicialComa;
-		 int comptadorComes = 0;
-		 int posicioFinalComa;
-		 //coma = elementAExtreure -1
-		 //indexOF(",");
-		 //charAt();
+	
+		 String[] elements = cadenaCSV.split(",");
+		 elementAExtreure = elementAExtreure -1;
 		 
 		 
-		 //Hacer con split
-		 cadenaCSV.split
 		 
 		 /*
 		 for (int i = 0; i < cadenaCSV.length(); i++) {
@@ -103,7 +96,7 @@ public class Exercici1 {
 			}
 		}
 		*/
-		 return elementCSV;
+		 return elements[elementAExtreure];
 	 }
 
 
