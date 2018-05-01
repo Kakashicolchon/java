@@ -81,21 +81,6 @@ public class Exercici1 {
 		 String[] elements = cadenaCSV.split(",");
 		 elementAExtreure = elementAExtreure -1;
 		 
-		 
-		 
-		 /*
-		 for (int i = 0; i < cadenaCSV.length(); i++) {
-			if (cadenaCSV.charAt(i) == ',') {
-				comptadorComes++;
-				posicioInicialComa = cadenaCSV.indexOf(",");
-				posicioFinalComa = cadenaCSV.indexOf(",", i+1);
-				if (elementAExtreure == comptadorComes-1) {
-					elementCSV = cadenaCSV.substring(posicioInicialComa, posicioFinalComa);
-					break;
-				}
-			}
-		}
-		*/
 		 return elements[elementAExtreure];
 	 }
 
