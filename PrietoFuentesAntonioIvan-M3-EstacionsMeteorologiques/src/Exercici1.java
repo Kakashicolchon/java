@@ -81,8 +81,13 @@ public class Exercici1 {
 	
 		 String[] elements = cadenaCSV.split(",");
 		 elementAExtreure = elementAExtreure -1;
+		 if (elements[elementAExtreure] == null) {
+			 return null;
+		}
+		 else {
+			 return elements[elementAExtreure];
+		}
 		 
-		 return elements[elementAExtreure];
 	 }
 	 
 	 
@@ -103,6 +108,20 @@ public class Exercici1 {
 		  
 		  return indexXafogor;
 	  }
+	  
+	  /**
+	   * Mètode que calcula tots els índexs de xafogor, per a totes les estacions meteorològiques,
+	   * a partir de les taules de temperatura i humitat. S'espera que les dues taules d'entrada
+	   * tinguin la mateixa mida.
+	   * @param ts Taula de temperatures (expressades en graus centígrads).
+	   * @param hs Taula d'humitats relatives (expressades en tant per cent).
+	   * @return Taula de tants elements com les dues taules d'entrada que conté
+	   * els índexs de xafogor calculats.
+	   */
+	   public static double[] calculaNIndexsXafogor(double[] ts, double[] hs) {
+		   
+	   }
+
 
 
 
